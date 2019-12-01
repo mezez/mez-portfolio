@@ -1,5 +1,6 @@
 const config = {
     brand: "Your Brand Name",
+    fullname: "Victor Ekemam",
     aboutme: `I am one of the most amazing developers yoy are likely to find out there. I have build applications for multiple platforms.
     I have applications that run on the web, on mobile and on computers as well. I'm I not great?`,
     projects: [

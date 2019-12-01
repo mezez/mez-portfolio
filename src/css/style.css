@@ -15,8 +15,12 @@
 	font-size: xx-large;
 }
 
-.full-card {
+.full-card .closure {
 	padding: 7rem;
+}
+
+.closure {
+	padding-left: 1rem;
 }
 
 .spc {
