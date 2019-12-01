@@ -19,8 +19,23 @@ class App extends Component {
         config: {}
     };
 
-    componentDidMount() {
+    aboutRef = React.createRef();
+    projectRef = React.createRef();
+    contactRef = React.createRef();
 
+    scrollToRef = (name) => {
+        const ref = this[name];
+        console.log(ref);
+
+        if (ref.current) {
+            ref.current.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            })
+        }
+    }
+
+    componentDidMount() {
         this.setState({
             config: defaultConfig
         });
@@ -38,18 +53,18 @@ class App extends Component {
 
         return (
             <div>
-                <Header brand={this.state.config.brand} />
+                <Header brand={this.state.config.brand} scrollToRef={this.scrollToRef} />
                 <br />
-                <FullCard aboutme={this.state.config.aboutme} />
+                <div ref={this.aboutRef}><FullCard aboutme={this.state.config.aboutme} /></div>
 
-                <div className='row spc'>
+                <div ref={this.projectRef} className='row spc'>
                     {defaultConfig.projects.map(project => {
                         return <SingleCard color='info' project={project} />
                     })}
                 </div>
 
                 <TextCard text={"Okay. So up next is my various professional profile... "} />
-                <Socal socials={defaultConfig.socials} />
+                <div ref={this.contactRef}><Socal socials={defaultConfig.socials} /></div>
                 <TextCard text={"And finally, you can reach me on " + this.state.config.phone + " or email at " + this.state.config.email} />
                 <Closure fullname={this.state.config.fullname} />
 
