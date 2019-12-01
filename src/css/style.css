@@ -1,0 +1,30 @@
+.header {
+	background: #7f7f90;
+	width: 90%;
+	height: 10rem;
+	font-size: xx-large;
+	margin: 5%;
+}
+
+.below-header {
+	width: 90%;
+}
+
+.below-header p {
+	text-align: center;
+	font-size: xx-large;
+}
+
+.full-card {
+	padding: 7rem;
+}
+
+.spc {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.social {
+	margin-left: 40%;
+	align-content: center;
+}
