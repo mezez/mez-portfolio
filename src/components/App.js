@@ -19,6 +19,7 @@ class App extends Component {
         config: {}
     };
 
+    homeRef = React.createRef();
     aboutRef = React.createRef();
     projectRef = React.createRef();
     contactRef = React.createRef();
@@ -52,21 +53,21 @@ class App extends Component {
     render() {
 
         return (
-            <div>
-                <Header brand={this.state.config.brand} scrollToRef={this.scrollToRef} />
+            <div className='container-fluid'>
+                <div ref={this.homeRef}><Header imgName={this.state.config.imgName} brand={this.state.config.brand} scrollToRef={this.scrollToRef} /></div>
                 <br />
                 <div ref={this.aboutRef}><FullCard aboutme={this.state.config.aboutme} /></div>
 
                 <div ref={this.projectRef} className='row spc'>
-                    {defaultConfig.projects.map(project => {
-                        return <SingleCard color='info' project={project} />
+                    {defaultConfig.projects.map((project, key) => {
+                        return <SingleCard key={key} color='info' project={project} />
                     })}
                 </div>
 
-                <TextCard text={"Okay. So up next is my various professional profile... "} />
+                <TextCard text={"Okay. So up next is my various professional profiles... "} />
                 <div ref={this.contactRef}><Socal socials={defaultConfig.socials} /></div>
                 <TextCard text={"And finally, you can reach me on " + this.state.config.phone + " or email at " + this.state.config.email} />
-                <Closure fullname={this.state.config.fullname} />
+                <Closure fullname={this.state.config.fullname} scrollToRef={this.scrollToRef} />
 
             </div>
         );

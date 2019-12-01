@@ -17,7 +17,7 @@ class Fullcard extends Component {
         return (
             <>
 
-                <img className='img img-responsive img-circle' src="images/salmon.jpg" />
+                {/* <img className='img img-responsive img-circle' src="images/hali.jpg" /> */}
 
                 <div className='full-card'>
 
@@ -27,7 +27,7 @@ class Fullcard extends Component {
                             <CardTitle>Dear Visitor,</CardTitle>
                             <CardText>
                                 <p> A Little Bit About Me </p>
-                                {this.props.aboutme}
+                                <p>{this.props.aboutme}</p>
                                 <p></p>
                                 <p> Now below, you can find a few of my projects. </p>
                             </CardText>

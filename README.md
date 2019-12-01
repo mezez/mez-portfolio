@@ -4,4 +4,4 @@ To set up, all you have to do is modify the config.js file in the components fol
 
 Project is only just starting and open to contributions.
 
-Currently having difficulties intregrating UI elements from https://github.com/contiamo/operational-ui, a great tool for making usage of UI elemets really easy and amazing.
+Ideally, app is meant to  intregrate UI elements from https://github.com/contiamo/operational-ui, a great tool for making usage of UI elemets really easy and amazing.

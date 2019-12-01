@@ -30,29 +30,31 @@ const Header = (props) => {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <>
-            <div>
-                <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">M</NavbarBrand>
+            <div className='nv'>
+                <Navbar color="light" light expand="md" >
+                    <NavbarBrand href="/">{props.brand}</NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink>Home</NavLink>
+                            <NavItem className='lk'>
+                                <NavLink onClick={() => {
+                                    handleClick(props, "homeRef")
+                                }}>Home</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem className='lk'>
                                 <NavLink onClick={() => {
                                     handleClick(props, "aboutRef")
                                 }}>About Me</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem className='lk'>
                                 <NavLink onClick={() => {
                                     handleClick(props, "projectRef")
                                 }}>My Projects</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem className='lk'>
                                 <NavLink onClick={() => {
                                     handleClick(props, "contactRef")
-                                }}>Social Links and Contact</NavLink>
+                                }}>Social/Contact</NavLink>
                             </NavItem>
 
                         </Nav>
@@ -61,23 +63,23 @@ const Header = (props) => {
                 </Navbar>
             </div>
             <div className='header'>
-
-                <div>
-                    <NavbarBrand href="#">{props.brand}</NavbarBrand>
-                    <img className='img img-responsive' src="images/welcome.png" />
+                <div className='below-header'>
+                    <br />
+                    <h3>Welcome,    Get comfortable!</h3>
+                    <div className='me row  col-xs-12'>
+                        <img className="img me img-responsive" src={`/images/${props.imgName}`} />
+                    </div>
 
                 </div>
             </div>
-            <div className='below-header'>
-                <p>To My Page</p>
 
-            </div>
         </>
     );
 }
 
 Header.propTypes = {
-    brand: PropTypes.string.isRequired
+    brand: PropTypes.string.isRequired,
+    scrollToRef: PropTypes.func.isRequired
 };
 
 

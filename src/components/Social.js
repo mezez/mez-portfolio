@@ -7,17 +7,18 @@ import {
 } from 'reactstrap';
 
 const Social = (props) => {
+
     return (
         <div>
 
             <Card>
                 <br />
                 <CardBody>
-                    <div className='social'>
+                    <div className='social '>
 
                         {
-                            props.socials.map(social => {
-                                return <Button outline color="info">{social.name}</Button>
+                            props.socials.map((social, key) => {
+                                return <a key={key} target='blank' href={`http://${social.url}`}><Button outline color="info">{social.name}</Button></a>
                             })
                         }
                     </div>
@@ -29,7 +30,8 @@ const Social = (props) => {
 }
 
 Social.propTypes = {
-    //text: PropTypes.string
+    socials: PropTypes.array.isRequired,
+    scrollToRef: PropTypes.func.isRequired,
 }
 
 export default Social;

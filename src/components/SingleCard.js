@@ -5,16 +5,17 @@ import { Card, Button, CardTitle, CardText } from 'reactstrap';
 class SingleCard extends Component {
 
     static propTypes = {
-        color: PropTypes.string.isRequired
+        color: PropTypes.string.isRequired,
+        project: PropTypes.object.isRequired
     }
 
     render() {
         return (
-            <div className='col-lg-3'>
+            <div className='col-lg-3 below-header'>
                 <Card body inverse color={this.props.color}>
                     <CardTitle>{this.props.project.title}</CardTitle>
                     <CardText>{this.props.project.description}</CardText>
-                    <Button color="secondary">View {this.props.project.title}</Button>
+                    <a className='btn btn-secondary' target='blank' href={`http://${this.props.project.url}`}>View {this.props.project.title}</a>
                 </Card>
 
             </div>
