@@ -15,6 +15,7 @@ class SingleCard extends Component {
                 <Card body inverse color={this.props.color}>
                     <CardTitle>{this.props.project.title}</CardTitle>
                     <CardText>{this.props.project.description}</CardText>
+
                     <a className='btn btn-secondary' target='blank' href={`${this.props.project.url}`}>View {this.props.project.title}</a>
                 </Card>
 
