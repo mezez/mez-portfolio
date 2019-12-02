@@ -12,4 +12,4 @@ Project is only just starting and open to contributions.
 
 Ideally, app is meant to intregrate UI elements from https://github.com/contiamo/operational-ui, a great tool for making usage of UI elemets really easy and amazing.
 
-See the app in action at victor-ekemam.netlify.com
+See the app in action at https://victor-ekemam.netlify.com
