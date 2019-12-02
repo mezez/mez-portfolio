@@ -18,7 +18,7 @@ const Social = (props) => {
 
                         {
                             props.socials.map((social, key) => {
-                                return <a key={key} target='blank' href={`http://${social.url}`}><Button outline color="info">{social.name}</Button></a>
+                                return <a key={key} target='blank' href={`${social.url}`}><Button outline color="info">{social.name}</Button></a>
                             })
                         }
                     </div>

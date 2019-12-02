@@ -26,7 +26,7 @@ class Fullcard extends Component {
                         <CardBody>
                             <CardTitle>Dear Visitor,</CardTitle>
                             <CardText>
-                                <p> A Little Bit About Me </p>
+                                <p> A Little Bit About Me. </p>
                                 <p>{this.props.aboutme}</p>
                                 <p></p>
                                 <p> Now below, you can find a few of my projects. </p>

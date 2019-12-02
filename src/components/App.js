@@ -64,7 +64,7 @@ class App extends Component {
                     })}
                 </div>
 
-                <TextCard text={"Okay. So up next is my various professional profiles... "} />
+                <TextCard text={"Okay. So up next, the links to my various profiles online... "} />
                 <div ref={this.contactRef}><Socal socials={defaultConfig.socials} /></div>
                 <TextCard text={"And finally, you can reach me on " + this.state.config.phone + " or email at " + this.state.config.email} />
                 <Closure fullname={this.state.config.fullname} scrollToRef={this.scrollToRef} />

@@ -12,9 +12,9 @@ class ClassName extends Component {
         return (
             <div className='closure row'>
                 <div className='col-lg-10'>
-                    <p>Regards</p>
+                    <p>Regards,</p>
                     <p></p>
-                    <p>{this.props.fullname}</p>
+                    <p>{`${this.props.fullname}.`}</p>
                 </div>
                 <div className='col-lg-2'>
                     <Button onClick={() => {
