@@ -2,7 +2,7 @@ A lot of developers build amazing tools everyday but somehow struggle to come up
 
 This tool is a generic one that should lift the burden of having to build portfolio sites for for yourself.
 
-To set up, all you have to do is modify the config.js file in the components folder to suit your profile and add your profle image or avatar in the public/images folder.
+To set up, all you have to do is modify the config.js file in the src folder to suit your profile and add your profle image or avatar in the public/images folder.
 
 The goal here is to eliminate any backend or serverside programming whatsoever.
 

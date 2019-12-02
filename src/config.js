@@ -42,6 +42,10 @@ const config = {
         {
             name: 'LinkedIn',
             url: 'https://linkedin.com/in/chimezirim-ekemam-5a5926b6' //must start with http:// or https://
+        },
+        {
+            name: 'Resume',
+            url: 'https://drive.google.com/file/d/1oYBLSYjSRXXz6sJDV6gwE1Fao8ml0fvC/view'
         }
     ],
 }
