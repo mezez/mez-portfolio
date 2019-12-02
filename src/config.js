@@ -5,7 +5,7 @@ const config = {
     aboutme: `I am one of the most amazing developers you are likely to find out there. Doesn't hurt to believe in you now does it? I have built applications for multiple platforms.
     I have applications that run on the web, on mobile and on computers as well. I'm I not great?`,
 
-    //projects must start with http:// or https://
+    //project url must start with http:// or https://
     projects: [
         {
             title: "College Portal",
