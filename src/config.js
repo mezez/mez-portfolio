@@ -49,7 +49,7 @@ const config = {
     {
       name: "Resume",
       url:
-        "https://drive.google.com/file/d/1oYBLSYjSRXXz6sJDV6gwE1Fao8ml0fvC/view"
+        "https://drive.google.com/file/d/1Uop5HjmcxhPsyHDH7ZXwH5rzlYruLATV/view?usp=sharing"
     }
   ]
 };
