@@ -48,7 +48,7 @@ const config = {
     },
     {
       name: "Resume",
-      url: "https://drive.google.com/open?id=1LwJ2b0iSo4Zq5oOuzjMz-BQBY_tT6FEI",
+      url: "https://drive.google.com/open?id=1kBsq5t-RQbySNWr3LlIUeBE1TGUG6FMm",
     },
   ],
 };
