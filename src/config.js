@@ -14,10 +14,10 @@ const config = {
       url: "https://portal.copem.edu.ng/",
     },
     {
-      title: "Chigo (Beta)",
+      title: "Ziliah (Beta)",
       description:
-        "An interactive Beauty Clinic Online Store with quizzes and interactive purchasing.",
-      url: "https://chigo.netlify.com",
+        "An interactive Skincare and Beauty Platform / Online Store (with quizzes and more.",
+      url: "https://ziliah.netlify.com",
     },
     {
       title: "Merchant Doodle",
