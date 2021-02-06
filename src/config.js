@@ -11,7 +11,7 @@ const config = {
       title: "College Portal",
       description:
         "A university portal deployed for various universities across Nigeria and Africa",
-      url: "https://portal.copem.edu.ng/",
+      url: "https://pgmautech.mycportal.com/",
     },
     {
       title: "Ziliah (Beta)",
